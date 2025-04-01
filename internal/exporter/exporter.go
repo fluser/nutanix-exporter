@@ -136,7 +136,7 @@ func FetchClusters(prismClient *nutanix.Cluster, version string) (map[string]str
 
 	// v4 request function
 	makeV4Request := func() (*http.Response, error) {
-		return prismClient.API.MakeRequest(ctx, "GET", "/api/clustermgmt/v4.0.b1/config/clusters")
+		return prismClient.API.MakeRequest(ctx, "GET", "/api/clustermgmt/v4.0/config/clusters")
 	}
 
 	// v3 request function
